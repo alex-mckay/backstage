@@ -87,7 +87,7 @@ export function convertLegacyApp(
   options: ConvertLegacyAppOptions = {},
 ): (FrontendPlugin | FrontendModule | ExtensionOverrides)[] {
   if (getComponentData(rootElement, 'core.type') === 'FlatRoutes') {
-    return collectLegacyRoutes(rootElement);
+    return collectLegacyRoutes(rootElement, options?.entityPage);
   }
 
   const appRouterEls = selectChildren(
