@@ -60,6 +60,7 @@ function selectChildren(
   });
 }
 
+/** @public */
 export interface ConvertLegacyAppOptions {
   /**
    * By providing an entity page element here it will be split up and converted
